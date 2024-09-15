@@ -1,0 +1,94 @@
+body{
+    font-family: cursive,sans-serif;
+    background-image: url("bg.jpeg");
+    background-size: cover;
+}
+
+hr{
+    background-color: #ffffff;
+}
+
+.container{
+    height:635px;
+    width: 550px;
+    background-color: rgb(58, 56, 56);
+    border-radius: 20px;
+    box-shadow: 0 0 5px 5px rgb(147, 144, 144);
+    border-style: solid;
+    border-color: white;
+    
+}
+
+.container:hover{
+    box-shadow: 0 0 5px 5px #ffffff;
+}
+
+
+.row{
+    height: 100px;
+}
+
+.textbox{
+    padding-top: 7px;
+}
+
+.col-3{
+    text-align: center;
+}
+
+#expression{
+    padding-top: 2px;
+    width:100%;
+    height:80%;
+    font-family: 'Digital Numbers', sans-serif;
+    font-size: 1.5rem;
+}
+
+button{
+    height:80px;
+    width:80px;
+}
+
+button {
+    padding: 1px 3px;
+    border: 2px solid #2c2c2c;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-size: 1.8rem;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.4s ease;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+  }
+  
+button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(255, 255, 255, 0) 70%
+    );
+    transform: scale(0);
+    transition: transform 0.5s ease;
+  }
+  
+button:hover::after {
+    transform: scale(4);
+  }
+  
+button:hover {
+    border-color: #666666;
+    background: #292929;
+  }
+  
+#cal{
+    background-color: #d50909;
+}
